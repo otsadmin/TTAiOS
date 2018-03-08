@@ -391,7 +391,6 @@
 				62201C552024AB8400E208BC /* GoogleService-Info.plist */,
 				62978DBD1FDACBB600BED3F6 /* Mixpanel.xcodeproj */,
 				62978DBC1FDACB5900BED3F6 /* Plist for firebase crashlytics */,
-				7E8781D51F87BE5100B1DDE7 /* Ranjit folder */,
 				E45F8DDE1F59FC4300350462 /* ReusableViewCollection.swift */,
 				E45F8DDC1F59D79000350462 /* PhoneBookUserCell.swift */,
 				E45F8DDA1F59D77C00350462 /* TTAUserCell.swift */,
@@ -515,6 +514,7 @@
 		41EC05281E4B1A14000E306D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7E8781D51F87BE5100B1DDE7 /* Storyboard classes */,
 				6C744F7B1E7E823200DA8F8D /* CustomCell */,
 				41EC05291E4B1A14000E306D /* AppDelegate.swift */,
 				B967FEE71E8B917700199317 /* WebViewController.swift */,
@@ -613,7 +613,7 @@
 			path = "Ranjit folder";
 			sourceTree = "<group>";
 		};
-		7E8781D51F87BE5100B1DDE7 /* Ranjit folder */ = {
+		7E8781D51F87BE5100B1DDE7 /* Storyboard classes */ = {
 			isa = PBXGroup;
 			children = (
 				62C0F262203EE62D004CB2A2 /* Term.htm */,
@@ -628,7 +628,7 @@
 				7E8781DB1F87BE6100B1DDE7 /* RViewAllVc.swift */,
 				62B73269203EB0D900959EAB /* RTermsVc.swift */,
 			);
-			path = "Ranjit folder";
+			path = "Storyboard classes";
 			sourceTree = "<group>";
 		};
 		839F75E7CAEFA9A4C44E81E8 /* Frameworks */ = {
