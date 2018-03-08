@@ -140,7 +140,7 @@ class PieChartView: UIView {
                 let averageRGB = (colorComponents[0] + colorComponents[1] + colorComponents[2]) / 3
                 
                 // if too light, use black. If too dark, use white
-                textAttributes[NSForegroundColorAttributeName] = (averageRGB > 0.7) ? UIColor.black : UIColor.white
+                textAttributes[NSForegroundColorAttributeName] = (averageRGB > 0.7) ? UIColor.white : UIColor.white
                 
                 // the bounds that the text will occupy
                 var renderRect = CGRect(origin: .zero, size: textToRender.size(attributes: textAttributes))

@@ -10,27 +10,72 @@ import UIKit
 import SVProgressHUD
 import Alamofire
 import CoreLocation
+import PieCharts
 
 class RPieChartCollectionViewCell: UICollectionViewCell{
     
-    @IBOutlet weak var pieChartView: PieChartView!
+    @IBOutlet weak var chartView: PieChart!
+    
+    //  @IBOutlet weak var pieChartView: PieChartView!
     @IBOutlet weak var topCuisinesLbl: UILabel!
     @IBOutlet weak var viewAllButton: UIButton!
-}
-
-class RAnalyticViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UITableViewDelegate,UITableViewDataSource,CLLocationManagerDelegate {
-
-    // TODO: OBJECT DECLARATION FOR THIS CLASS
     
-    @IBOutlet weak var tableView: UITableView!
+    
+    
+    
+    // color view
+    
+    @IBOutlet weak var view1: UIView!
+    @IBOutlet weak var view2: UIView!
+    @IBOutlet weak var view3: UIView!
+    @IBOutlet weak var view4: UIView!
+    @IBOutlet weak var view5: UIView!
+    @IBOutlet weak var view6: UIView!
+    
+    // text Label
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label3: UILabel!
+    @IBOutlet weak var label4: UILabel!
+    @IBOutlet weak var label5: UILabel!
+    @IBOutlet weak var label6: UILabel!
+    
+    // button Wrapper on view and label
+    
+    @IBOutlet weak var button1: UIButton!
+    @IBOutlet weak var button2: UIButton!
+    @IBOutlet weak var button3: UIButton!
+    @IBOutlet weak var button4: UIButton!
+    @IBOutlet weak var button5: UIButton!
+    @IBOutlet weak var button6: UIButton!
+    
+}
+class PieChartViewCell:UITableViewCell{
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
-    @IBOutlet weak var BellBtn: UIButton!
     @IBOutlet weak var lblRecentTaste: UILabel!
+    @IBOutlet weak var btnDiningHistory: UIButton!
+}
+
+class RAnalyticViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UITableViewDelegate,UITableViewDataSource,CLLocationManagerDelegate, PieChartDelegate {
+    
+    // TODO: OBJECT DECLARATION FOR THIS CLASS
+    
+    var constantValue = 1
+    
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var BellBtn: UIButton!
     @IBOutlet weak var infoLbl: UILabel!
     @IBOutlet weak var mapBtn: UIButton!
     @IBOutlet weak var addAccountBtn: UIButton!
-   
+    
+    // for button click
+    
+    var cuisinePercentageValue:NSArray = NSArray()
+    var cityPercentageValue:NSArray = NSArray()
+    var cuisineNameValue:NSArray = NSArray()
+    var cityNameValue:NSArray = NSArray()
+    
     
     var arrNotification =  [[String:Any]]()
     var pageNo = 1
